@@ -1,0 +1,21 @@
+{
+  "name": "first",
+  "version": "1.0.0",
+  "description": "- Create  - Read - Update - Delete",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "save": "git add . && git commit -m",
+    "post": "git push origin master" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morozzzDima/first.git"
+  },
+  "author": "Dima Moroz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morozzzDima/first/issues"
+  },
+  "homepage": "https://github.com/morozzzDima/first#readme"
+}
