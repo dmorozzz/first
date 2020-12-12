@@ -40,8 +40,8 @@ router.get('/:id', async (req, res, next) => {
 
 router.delete('/:id', async (req, res, next) => {
     try {
-        const deletedPost = await deletePostById(req.params.id);
-        return res.status(200).json(deletedPost);
+        await deletePostById(req.params.id);
+        return res.status(200).end();
     } catch (error) {
         return next(new OperationError(400, error.message));       
     }

@@ -11,5 +11,7 @@ const databaseOptions = {
 mongoose.connect(connectUrl, databaseOptions);
 
 module.exports = {
-    databaseConnection: mongoose.connection
+    databaseConnection: mongoose.connection,
+    databaseOptions,
+    connectUrl,
 }

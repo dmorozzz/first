@@ -23,5 +23,6 @@ app.use(async (error, req, res, next) => {
 })
 
 module.exports =  {
-    app
+    app,
+    apiUrl
 };

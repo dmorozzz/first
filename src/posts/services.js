@@ -14,7 +14,7 @@ const getPostById = async id => {
 }
 
 const deletePostById = async id => {
-   const post = await Post.findByIdAndDelete(id);
+    return await Post.findByIdAndDelete(id);
 }
 
 const updatePost = async (id, data)=> {

@@ -23,7 +23,7 @@ const sendEmailToAdmin = error => {
 
 class OperationError extends Error {
     constructor(statusCode, message) {
-        super(message)
+        super(message);
         this.statusCode = statusCode;
         this.isOperation = true;
     }
