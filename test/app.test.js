@@ -21,7 +21,7 @@ const testablePost = {
 };
 
 before( async () => {
-    await mongoose.connect(connectUrl, databaseOptions);
+    return await mongoose.connect(connectUrl, databaseOptions);
 });
 
 describe('Server', () => {
