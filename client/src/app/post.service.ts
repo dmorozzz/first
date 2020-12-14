@@ -24,6 +24,10 @@ export class PostService {
     return this.http.get(`${this.url}/${id}`);
   }
 
+  public updatePostById(id, data): Observable<object> {
+    return this.http.put(`${this.url}/${id}`, data);
+  }
+
   public deletePostById(id): Observable<object> {
     return this.http.delete(`${this.url}/${id}`);
   }

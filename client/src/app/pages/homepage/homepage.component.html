@@ -1,13 +1,10 @@
-<div class="page">
-    <div class="content">
-        <div class="posts" *ngIf="getPosts | async as posts">
-            <a *ngFor="let post of posts" routerLink="/post/{{post._id}}" class="post">
-                <h2>{{post.title}}</h2>
-                <p>{{post.text}}</p>
-                <div class="author">by <span>{{post.author}}</span></div>
-            </a>
-            <h2 *ngIf="posts.length == 0">Here is empty</h2>
-        </div>
+<div class="content">
+    <div class="posts" *ngIf="getPosts | async as posts">
+        <a *ngFor="let post of posts" routerLink="/post/{{post._id}}" class="post">
+            <h2>{{post.title}}</h2>
+            <p>{{post.text}}</p>
+            <div class="author">by <span>{{post.author}}</span></div>
+        </a>
+        <h2 *ngIf="posts.length == 0">Here is empty</h2>
     </div>
 </div>
-

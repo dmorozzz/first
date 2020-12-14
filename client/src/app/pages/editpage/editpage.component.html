@@ -1,1 +1,30 @@
-<p>editpage works!</p>
+<div class="content">
+    <form *ngIf="editPostForm" [formGroup]="editPostForm" (ngSubmit)="onSubmit()">
+        <h1>Add Post</h1>
+        <label>
+            <input type="text" placeholder="Title" formControlName="title">
+            <div class="errors" *ngIf="form.title.touched && form.title.errors">
+                Title is required
+            </div>
+        </label>
+
+        <label>
+            <textarea cols="31" rows="{{textareaColumns}}" (keyup)="onKeyUpEvent($event)"
+                placeholder="Some of your thoughts" formControlName="text"></textarea>
+            <div class="errors" *ngIf=" form.text.touched && form.text.errors">
+                Text is required
+            </div>
+        </label>
+        <label>
+            <input type="text" placeholder="Your name" formControlName="author">
+            <div class="errors" *ngIf="form.author.touched && form.author.errors">
+                Name is required
+            </div>
+        </label>
+        <button [ngClass]="{'active-btn': editPostForm.valid && !submitted}"
+            [disabled]="editPostForm.invalid || submitted">Send</button>
+    </form>
+    <div class="global-error" *ngIf="wasError">
+        Opps... Something went wrong! Please, try later.
+    </div>
+</div>

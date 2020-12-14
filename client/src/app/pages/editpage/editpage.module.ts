@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { EditpageComponent } from './editpage.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {path: '', component: EditpageComponent}
@@ -12,10 +12,13 @@ const routes: Routes = [
   declarations: [EditpageComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    FormsModule, 
+    ReactiveFormsModule
   ],
   exports: [
-    EditpageComponent
+    EditpageComponent,
+  
   ]
 })
 export class EditpageModule { }

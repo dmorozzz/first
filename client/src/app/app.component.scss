@@ -1,0 +1,13 @@
+@import '../styles/colors';
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;;
+}
+.page {
+    padding: 40px 20px;
+    background: $ligth-gray;
+    flex-grow: 1;
+}
