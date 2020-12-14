@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { PostService } from '../../post.service';
 
 @Component({
   selector: 'app-homepage',
@@ -7,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
-  constructor() { }
+  public getPosts: Observable<object> = this.postService.getAllPosts();
+
+  constructor(private postService: PostService) {     
+  }
+
+ 
 
   ngOnInit(): void {
   }

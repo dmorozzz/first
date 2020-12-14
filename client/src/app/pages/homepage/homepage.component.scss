@@ -1,0 +1,43 @@
+@import '../../../styles/colors';
+
+.page {
+    padding: 40px 20px;
+    background: $ligth-gray;
+}
+
+
+.posts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding: 10px;
+    transition: .5s all;
+    border: 2px solid #000;
+    &:hover {
+        box-shadow: 0 0 10px rgba(0,0,0,1);
+    }
+}
+
+.author {
+    margin-top: 5px;
+    color: gray;
+    font-size: .9em;
+    span {
+        text-decoration: underline;     
+    }
+}
+
+h2 {
+    color: $orange-color;
+}
