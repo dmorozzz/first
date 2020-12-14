@@ -10,7 +10,7 @@ export class PostService {
 
   constructor(private http: HttpClient) { }
 
-  url = 'http://localhost:8080/api/v1/posts';
+  url = 'api/v1/posts';
 
   public createPost(data): Observable<object> {
     return this.http.post(this.url, data);
