@@ -6,6 +6,7 @@
                 <p>{{post.text}}</p>
                 <div class="author">by <span>{{post.author}}</span></div>
             </a>
+            <h2 *ngIf="posts.length == 0">Here is empty</h2>
         </div>
     </div>
 </div>

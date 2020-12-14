@@ -1,1 +1,14 @@
-<p>postpage works!</p>
+<div class="page">
+    <div class="content">
+        <div class="post" *ngIf="getPost | async as post">
+            <h2>{{post.title}}</h2>
+            <p>{{post.text}}</p>
+            <div class="author">author: {{post.author}}</div>
+            <div class="tools">
+                <a routerLink="/edit/{{post._id}}">Edit Post</a>
+                <button (click)="deletePost(post._id)">Delete Post</button>
+            </div>
+        </div>
+       
+    </div>
+</div>

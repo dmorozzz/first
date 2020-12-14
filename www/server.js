@@ -16,7 +16,6 @@ const startServer = () => {
 
 databaseConnection.once('open', startServer);
 databaseConnection.on('error', error => {
-    console.log(error);
     throw new Error(error)
 })
 

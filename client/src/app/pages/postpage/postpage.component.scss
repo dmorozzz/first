@@ -1,0 +1,44 @@
+@import '../../../styles/colors';
+
+p {
+    margin: 20px;
+    font-size: 1.1em;
+}
+
+.author {
+    color: gray;
+}
+
+.tools {
+    display: flex;
+    margin-top: 20px;
+    a {
+        display: block;
+        background: $orange-color;
+        padding: 10px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        margin-right: 20px;
+        &:hover {
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+    }
+
+    button {
+        color: #fff;
+        color: #fff;
+        font-weight: 600;
+        border: none;
+        padding: 10px;
+        font-size: 1em;
+        cursor: pointer;
+        background: #FF4D4D;
+        outline: none;
+        &:hover {
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+    }
+
+}

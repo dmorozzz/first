@@ -19,4 +19,12 @@ export class PostService {
   public getAllPosts(): Observable<object> {
     return this.http.get(this.url);
   }
+
+  public getPostById(id): Observable<object> {
+    return this.http.get(`${this.url}/${id}`);
+  }
+
+  public deletePostById(id): Observable<object> {
+    return this.http.delete(`${this.url}/${id}`);
+  }
 }

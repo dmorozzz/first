@@ -1,9 +1,5 @@
 @import '../../../styles/colors';
 
-.page {
-    padding: 40px 20px;
-    background: $ligth-gray;
-}
 
 
 .posts {
@@ -24,6 +20,9 @@
     padding: 10px;
     transition: .5s all;
     border: 2px solid #000;
+    p {
+        margin: 10px 0;
+    }
     &:hover {
         box-shadow: 0 0 10px rgba(0,0,0,1);
     }

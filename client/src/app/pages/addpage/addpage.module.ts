@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
 import { Routes, RouterModule} from '@angular/router';
 import { AddpageComponent } from './addpage.component';
 
@@ -12,7 +15,9 @@ const routes: Routes = [
   declarations: [AddpageComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    ReactiveFormsModule,
+    FormsModule
   ],
   exports: [
     AddpageComponent
